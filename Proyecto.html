@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+<body onload="timer()">
+    <div class="container-fluid">
+        <div class="row pt-5 justify-content-center">
+            <h3 class="text-center">Welcome in this Formulary</h3>
+            <form action="">
+                <div class="mb-3">
+                    <label for="" class="form-label">Insert your name please</label>
+                    <input type="text" class="form-control input-edit w-50" id="inputName">
+                </div>
+                
+                <div class="mb-3">
+                    <h4>Answer the questions:</h4>
+                    <h4>Only you have 30 seconds for answer else the game finish <span id="timeReturn"></span></h4>
+                </div>
+                <div class="">
+                    <div class="mb-3 mx-auto">
+                        <label for="" class="form-label">What is the best team on Mexico?</label>
+                        <input type="text" class="form-control input-edit w-50" id="firstquestion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">What is the best football player in the world?</label>
+                        <input type="text" class="form-control input-edit w-50" id="secondquestion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">What is your favorite team on Mexico?</label>
+                        <input type="text" class="form-control input-edit w-50" id="thirdquestion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">What is your favorite football player?</label>
+                        <input type="text" class="form-control input-edit w-50" id="fourthquestion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">How are you today?</label>
+                        <input type="text" class="form-control input-edit w-50" id="fifthquestion">
+                    </div>
+                    
+                </div>
+                
+
+
+            </form>
+            <button onclick="ready()" class="btn btn-outline-danger w-25 mb-3 m-2" id="formFinish">Ready</button>
+            <button onclick="restart()" class="btn btn-outline-primary w-25 mb-3 m-2" id="restart">Restart</button>
+            <p id="date"></p>
+            
+            
+
+        </div>
+     
+
+    </div>
+    <audio id="song" > 
+        <source src="gameover (1).mp3" type="audio/mpeg">
+        The song is not hability
+
+    </audio>
+    
+</body>
+<script src="proyecto.js"></script>
+</html>
